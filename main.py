@@ -74,7 +74,7 @@ client = SecureAPIClient()
 apis = client.get_apis()
 
 # Global variables
-watermark = "UG"  # Default value
+watermark = "wizard"  # Default value
 count = 0
 userbot = None
 timeout_duration = 300  # 5 minutes
@@ -82,9 +82,9 @@ timeout_duration = 300  # 5 minutes
 
 # Initialize bot with random session
 bot = Client(
-    "ugx",
-    api_id=API_ID,
-    api_hash=API_HASH,
+    "wizard",
+    api_id=16541842,
+    api_hash=612e11382c43476e2b7a1fb7b0d6f488,
     bot_token=BOT_TOKEN,
     workers=300,
     sleep_threshold=60,
@@ -123,7 +123,7 @@ async def set_log_channel_cmd(client: Client, message: Message):
         if db.set_log_channel(client.me.username, channel_id):
             await message.reply_text(
                 "✅ Log channel set successfully!\n\n"
-                f"Channel ID: {channel_id}\n"
+                f"Channel ID: {-1002756363810}\n"
                 f"Bot: @{client.me.username}"
             )
         else:
@@ -186,11 +186,11 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/ItsUGxBot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/Wizrad_2025")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ItsUGBot")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Wizrad_2025")        ],
     ]
 )
 
@@ -323,13 +323,13 @@ async def start(bot: Client, m: Message):
                 
             commands_list = (
                 "**🤖 Available Commands**\n\n"
-                "• /drm - Start Uploading...\n"
+                "• /txt - Start Uploading...\n"
                 "• /plan - View subscription\n"
             )
             
             if is_admin:
                 commands_list += (
-                    "\n**👑 Admin Commands**\n"
+                    "\new**👑 Admin Commands**\n"
                     "• /users - List all users\n"
                 )
             
@@ -1394,7 +1394,7 @@ async def text_handler(bot: Client, m: Message):
                 elif 'encrypted.m' in url:    
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {𝗪𝗶𝘇𝗮𝗿𝗱 𝗯𝗼𝘁𝘇}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                     filename = res_file  
@@ -1406,7 +1406,7 @@ async def text_handler(bot: Client, m: Message):
                 elif 'drmcdni' in url or 'drm/wv' in url:
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {𝗪𝗶𝘇𝗮𝗿𝗱 𝗯𝗼𝘁𝘇}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
@@ -1418,7 +1418,7 @@ async def text_handler(bot: Client, m: Message):
                 else:
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {𝗪𝗶𝘇𝗮𝗿𝗱 𝗯𝗼𝘁𝘇}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
